@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 60px;
+    width: 1182px;
+    height: 522px;
+    gap: 5px;
+    margin: 0 auto;
+}
+.container img{
+    width: 50%;
+    height: 100%;
+
+}
+.container h1{
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: 528px; */
+    /* height: 144px; */
+}
+.container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
