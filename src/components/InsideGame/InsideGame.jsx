@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import GameHeader from './GameHeader'
 import MainGamePart from './MainGamePart'
+import styles from './InsideGame.module.css'
 
 const InsideGame = () => {
   const [selectedNum, setSelectedNum] = useState();  
@@ -33,7 +34,7 @@ const InsideGame = () => {
 
 
   return (
-    <div>
+    <div className={`${styles.container}`}>
       <GameHeader selectedNum={selectedNum} setSelectedNum={setSelectedNum} score={score} error={error} setError={setError}/>
       <MainGamePart currentDice={currentDice} rollDice={rollDice} setScore={setScore}/>
     </div>
