@@ -6,8 +6,8 @@ import { use } from 'react'
 
 
 const MainGamePart = ({currentDice,rollDice,setScore}) => {
-  const [showRules,setShowRules] = useState(false);
-
+  
+  const [showRules, setShowRules] = useState(false);
 
   const handleClick= () => {
     setScore(0);
@@ -22,7 +22,7 @@ const MainGamePart = ({currentDice,rollDice,setScore}) => {
       <img src={`dice_${currentDice}.png`} onClick={rollDice} alt={`${currentDice}`} />
       <p>Click on Dice to roll</p>
       <Button msg='Reset score' isOutline='true' handleClick={handleClick}/>
-      <Button msg={setShowRules ? "Hide Rules" : "Show Rules"} handleClick={handleClick2} />
+      <Button msg="Show/hide" handleClick={handleClick2} showRules={showRules}/>
       <div>
         {showRules && <Rules/>}
       </div>
