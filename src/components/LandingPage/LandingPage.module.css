@@ -32,6 +32,8 @@
         display: flex;
         flex-direction: column;
         width: 600px;
+        height: min-content;
+        padding: 20px;
     }
     .container img{
         width: 100%;
