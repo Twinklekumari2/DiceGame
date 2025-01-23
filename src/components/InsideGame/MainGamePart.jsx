@@ -19,7 +19,7 @@ const MainGamePart = ({currentDice,rollDice,setScore}) => {
 
   return (
     <div className={`${styles.container}`}>
-      <img src={`/dice_${currentDice}.png`} onClick={rollDice} alt={`${currentDice}`} />
+      <img src={`./public/dice_${currentDice}.png`} onClick={rollDice} alt={`${currentDice}`} />
       <p>Click on Dice to roll</p>
       <Button msg='Reset score' isOutline='true' handleClick={handleClick}/>
       <Button msg={setShowRules ? "Hide Rules" : "Show Rules"} handleClick={handleClick2} />
