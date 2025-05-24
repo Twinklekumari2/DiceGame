@@ -24,6 +24,10 @@ const InsideGame = () => {
         if(selectedNum === randomNumber ){
           setScore((prev) => prev + randomNumber);
         }
+        else if(selectedNum === 3){
+          setCurrentDice(selectedNum);
+          setScore((prev) => prev+3);
+        }
         else{
           setScore((prev) => prev - 2);
         }
